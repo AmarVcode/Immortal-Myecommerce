@@ -1,0 +1,73 @@
+header{
+    width: 100%;
+    background-color: #191970;
+    
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+
+nav>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>div>svg{
+    width: 1.2rem;
+    fill: white;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+    box-sizing: content-box;
+    padding: 1rem;
+}
+
+nav>div>svg:hover{
+    transform: rotatez(90deg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+ 
+
+#signin{
+    padding: 0.5em 2em;
+    font-size: 1rem;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: .5rem;
+    color: white;
+    cursor: pointer;
+    transition: 100ms;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#signin:hover{
+    border:2px solid #1919707b;
+    background-color: white;
+    color: #191970;
+}
+
+#menus{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#menus>a{
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(90deg,transparent,transparent,white);
+    background-size: 400%;
+    background-position: left;
+    padding: 1em 3em;
+    font-size: 1rem;
+    transition: 500ms;
+    
+}
+
+#menus>a:hover{
+    background-position: right;
+    color: #191970;
+}
