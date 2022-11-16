@@ -16,25 +16,31 @@ nav>div{
     justify-content: center;
 }
 
-nav>div>svg{
+#menu{
     width: 1.2rem;
+    display: none;
     fill: white;
     cursor: pointer;
-    transition: 500ms ease-in-out;
+    transition: 200ms ease-in-out !important;
     box-sizing: content-box;
     padding: 1rem;
 }
 
-nav>div>svg:hover{
+#menu>svg{
+    align-items: center;
+    justify-content: center;
+}
+
+#menu:hover{
     transform: rotatez(90deg);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
  
 
 #signin{
     padding: 0.5em 2em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: 2px solid white;
     background-color: transparent;
     border-radius: 5px;
@@ -43,6 +49,7 @@ nav>div>svg:hover{
     cursor: pointer;
     transition: 100ms;
     font-family: 'Patrick Hand', cursive;
+    text-decoration: none;
 }
 
 #signin:hover{
@@ -62,7 +69,7 @@ nav>div>svg:hover{
     background-size: 400%;
     background-position: left;
     padding: 1em 3em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: 500ms;
     
 }
@@ -70,4 +77,26 @@ nav>div>svg:hover{
 #menus>a:hover{
     background-position: right;
     color: #191970;
+}
+
+
+
+@media  (max-width:800px) {
+
+    #menus{
+        display: none;
+    }
+
+    .droptime{
+    display: grid !important;
+    grid-template-columns: auto !important;
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 0px 10px black;
+    background-color: #191970;
+}
+#menu{
+    display: flex;
+    z-index: 1000;
+}
 }
