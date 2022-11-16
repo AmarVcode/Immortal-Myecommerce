@@ -9,7 +9,7 @@ export class NavbarComponent implements OnInit {
 
 
 
-  public user = "Sign In"
+  public user = localStorage.getItem("userName")||"Sign In"
   public seedrop = false
 
   mymenu(){
