@@ -18,8 +18,13 @@ export class FormComponent implements OnInit {
 
   signInUser(){
     console.log(this.signIn.value.user)
-    localStorage.setItem("userName",this.signIn.value.user||"Sign In")
-    window.location.reload()
+    if(this.signIn.value.user !== null){
+      localStorage.setItem("userName",this.signIn.value.user)
+      window.location.reload()
+    }
+    else{
+      confirm("Fill The Below Form")
+    }
   }
 
   constructor() { }
