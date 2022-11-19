@@ -101,3 +101,10 @@ nav>div{
     z-index: 1000;
 }
 }
+
+
+
+.active{
+    background-position: right !important;
+    color: #191970 !important;
+}
