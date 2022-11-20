@@ -108,3 +108,8 @@ nav>div{
     background-position: right !important;
     color: #191970 !important;
 }
+.sactive{
+    border:2px solid #1919707b !important;
+    background-color: white !important ;
+    color: #191970 !important;
+}
