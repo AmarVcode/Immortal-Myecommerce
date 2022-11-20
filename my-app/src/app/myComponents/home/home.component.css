@@ -3,16 +3,17 @@ main{
     margin: auto;
 }
 #main_img{
-    max-width: fit-content;
+    max-width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
     overflow: hidden;
-    border: 10px solid #191970;
+    opacity: 99%;
+    align-items: center;
+    justify-content: center;
 }
 #main_img>img{
     margin: 0;
-    border: 5px solid #191970;
-    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
 }
 
 #main_img>img:nth-child(1){
