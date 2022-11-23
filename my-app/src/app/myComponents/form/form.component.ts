@@ -21,7 +21,7 @@ export class FormComponent implements OnInit {
     if(this.signIn.value.user !== null && this.signIn.value.userLast !== null && this.signIn.value.userMiddle !== null){
       localStorage.setItem("userName",this.signIn.value.user)
       alert("Thanks For Sign In Our Website, Confirm Your Sign " + this.signIn.value.user +" "+ this.signIn.value.userMiddle +" "+ this.signIn.value.userLast)
-      window.location.reload()
+      window.location.href="/Home"
     }
     else{
       confirm("Fill The Below Form")
