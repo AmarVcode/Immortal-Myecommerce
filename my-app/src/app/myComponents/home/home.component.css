@@ -1,8 +1,10 @@
-main{
+main {
     max-width: 1000px;
     margin: auto;
+    padding: 1rem;
 }
-#main_img{
+
+#main_img {
     max-width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -11,36 +13,58 @@ main{
     align-items: center;
     justify-content: center;
 }
-#main_img>img{
+
+#main_img>img {
     margin: 0;
     box-shadow: 0px 0px 20px black;
 }
 
-#main_img>img:nth-child(1){
+#main_img>img:nth-child(1) {
     transform: scale(1.5);
     z-index: -10;
-    
+
 }
-#main_img>img:nth-child(2){
+
+#main_img>img:nth-child(2) {
     transform: scale(1.4);
     z-index: -20;
 }
 
-#main_img>img:nth-child(3){
+#main_img>img:nth-child(3) {
     transform: scale(1.5);
     z-index: -20;
 }
-#main_img>img:nth-child(4){
+
+#main_img>img:nth-child(4) {
     transform: scale(1.4);
     z-index: -20;
 }
-#main_img>img:nth-child(5){
+
+#main_img>img:nth-child(5) {
     transform: scale(1.8);
     z-index: -30;
 }
 
-#main_img>img:nth-child(6){
+#main_img>img:nth-child(6) {
     transform: scale(1.2);
     z-index: -20;
+}
+
+#maintitle {
+    border: 5px solid transparent;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(180deg, navy, black);
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    transition: 500ms;
+}
+
+#maintitle:hover {
+    cursor: pointer;
+    transform: rotateZ(-5deg);
+    border-bottom: 5px solid navy;
 }
 
