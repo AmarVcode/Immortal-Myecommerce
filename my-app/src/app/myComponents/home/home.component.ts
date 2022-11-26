@@ -13,21 +13,12 @@ export class HomeComponent implements OnInit {
   public title = "Value For Money!"
   offer:any=""
 
-  
-  
-  
-  
   constructor(private offerdate:OfferService) {
     
     this.offer =offerdate.Offer()
-    console.log(this.offer)
-    
-    
-    
+
   }
-  
-  
-  
+ 
   
   
   
