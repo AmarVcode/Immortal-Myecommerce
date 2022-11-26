@@ -1,5 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
 import { OfferService } from 'src/app/Service/offer.service';
+
 
 @Component({
   selector: 'app-home',
@@ -9,14 +11,28 @@ import { OfferService } from 'src/app/Service/offer.service';
 export class HomeComponent implements OnInit {
 
   public title = "Value For Money!"
-  public offer:any=""
+  offer:any=""
 
+  
+  
+  
+  
   constructor(private offerdate:OfferService) {
     
     this.offer =offerdate.Offer()
+    console.log(this.offer)
+    
+    
+    
   }
-
+  
+  
+  
+  
+  
+  
   ngOnInit(): void {
+    
   }
 
 }
