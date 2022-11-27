@@ -7,7 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritesComponent implements OnInit {
 
-  constructor() { }
+array:any=localStorage.getItem("favourite") || []
+
+  constructor() { 
+console.log(this.array)
+
+
+localStorage.setItem("favourite",this.array)
+  }
+
+
+
+
+
+
+
+
+
+
 
   ngOnInit(): void {
   }

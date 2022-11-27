@@ -13,8 +13,21 @@
         {{title}}
     </h1>
 
-    <div class="products" *ngFor="let items of offer">
-        <h1>{{items.maintitle}}</h1>
+    <div class="products" >
+        <div *ngFor="let items of offer" class="items">
+        <div>
+<div class="imgdiv">
+    <img src="{{items.main_img}}" alt="">
+</div>
+        </div>
+        <div>
+<h2>{{items.mini_title}}</h2>
+<h3>{{items.price}} ₹</h3>
+<button class="Fav">Add To Favorite</button>
+<button class="detail" (click)="detail(items)">Detail</button>
+        </div>
+        </div>
+        
     </div>
 
 </main>
