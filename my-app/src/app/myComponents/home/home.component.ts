@@ -48,6 +48,35 @@ location.pathname="productdetail"
     div?.classList.remove("fixed2")
   }
   
+  addfav(items:any){
+
+let store:any=localStorage.getItem("fav")||[]
+if(store.length === 0){
+  store.push(items)
+}
+else{
+  store=JSON.parse(store)
+
+for(let i=0;i<=store.length;i++){
+  if(store[i].mini_title===items.mini_title){
+    store.push(items)
+  }
+  else{
+    console.log("product Alredy in favarite")
+  }
+}
+console.log(store)
+store=JSON.stringify(store)
+localStorage.setItem("fav",store)
+
+}
+
+
+
+  }
+
+
+
   ngOnInit(): void {
     
   }
