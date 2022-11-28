@@ -13,24 +13,30 @@ export class HomeComponent implements OnInit {
   public title = "Value For Money!"
   offer:any=[]
 
+
+
+  //fetching Data From Service
   constructor(private offerdate:OfferService) {
     
     this.offer =offerdate.Offer()
-console.log(this.offer)
-
-
-
-
-
-
+    console.log(this.offer)
   }
  
+
+
+
+
+  //Detail Function --------------------------
   detail(items:any){
     items=JSON.stringify(items)
 localStorage.setItem("detail",items)
 location.pathname="productdetail"
   }
   
+
+
+
+  //fixed Function Image Zoom
   fixed(src:any){
     console.log("working")
     console.log(src)
@@ -38,44 +44,46 @@ location.pathname="productdetail"
     div?.setAttribute("class","fixed2")
     let img=document.getElementById("zoomed")
     img?.setAttribute("src",src)
-
   }
 
 
-
+//removing function for nmoveing class from dom reverse of fixed
   removefixed(){
     let div=document.getElementById("fixed")
     div?.classList.remove("fixed2")
   }
-  
+
+
+
+
+  //addfav function for adding favourites -------------
   addfav(items:any){
 
 let store:any=localStorage.getItem("fav")||[]
-if(store.length === 0){
+if(store.length == 0){
   store.push(items)
+  console.log("added")
 }
 else{
   store=JSON.parse(store)
 
-for(let i=0;i<=store.length;i++){
-  if(store[i].mini_title===items.mini_title){
+for(let i=0;i<store.length;i++){
+  if(store[i].mini_title==items.mini_title){
     store.push(items)
   }
   else{
     console.log("product Alredy in favarite")
   }
 }
+
+}
+
 console.log(store)
 store=JSON.stringify(store)
 localStorage.setItem("fav",store)
 
-}
-
-
 
   }
-
-
 
   ngOnInit(): void {
     
