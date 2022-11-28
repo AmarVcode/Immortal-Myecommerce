@@ -1,1 +1,31 @@
-<p>favorites works!</p>
+
+
+<main>
+    <h1 id="maintitle">
+        {{title}}
+    </h1>
+
+    <div class="products" >
+        <div *ngFor="let items of array" class="items">
+        <div>
+<div class="imgdiv">
+    <img src="{{items.main_img}}" alt="" (click)="fixed(items.main_img)">
+</div>
+        </div>
+        <div>
+<h2>{{items.mini_title}}</h2>
+<h4>Brand :- {{items.brand}}</h4>
+<h3>Price :- {{items.price}} ₹</h3>
+<button class="detail" (click)="detail(items)">Detail</button>
+        </div>
+        </div>
+        
+    </div>
+<button (click)="deleted()" id="delete">
+    Delete Favorites
+</button>
+</main>
+
+<div id="fixed" (click)="removefixed()">
+    <img src="" id="zoomed">
+</div>
