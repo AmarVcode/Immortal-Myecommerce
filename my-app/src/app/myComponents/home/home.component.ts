@@ -60,23 +60,27 @@ location.pathname="productdetail"
   addfav(items:any){
 
 let store:any=localStorage.getItem("fav")||[]
-if(store.length == 0){
+if(store.length === 0){
   store.push(items)
   console.log("added")
 }
 else{
   store=JSON.parse(store)
 
-for(let i=0;i<store.length;i++){
-  if(store[i].mini_title==items.mini_title){
-    store.push(items)
+
+  for(let i=0;i<store.length;i++){
+    if(store[i].mini_title===items.mini_title){
+      console.log("item Already Exist");
+    }
+    else{
+      store.push(items)
+      break;
+    }
   }
-  else{
-    console.log("product Alredy in favarite")
-  }
-}
 
 }
+
+
 
 console.log(store)
 store=JSON.stringify(store)
