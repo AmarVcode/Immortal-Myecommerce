@@ -11,9 +11,8 @@ import { OfferService } from 'src/app/Service/offer.service';
 })
 export class HomeComponent implements OnInit {
 
-  public title = "Value For Money!"
-  offer: any = []
-
+  public title = "Value For Money!";
+  offer: any = [];
 
 
   //fetching Data From Service
@@ -66,19 +65,14 @@ export class HomeComponent implements OnInit {
     }
     else{
       store=JSON.parse(store);
+      
       store.push(items);
-      console.log("Adding Done")
+      console.log("Adding Done");
     }
-  
-
-    store = JSON.stringify(store)
-    localStorage.setItem("fav", store)
-
-
+    store = JSON.stringify(store);
+    localStorage.setItem("fav", store);
   }
-
   ngOnInit(): void {
 
   }
-
 }
