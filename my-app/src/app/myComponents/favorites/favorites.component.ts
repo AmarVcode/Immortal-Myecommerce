@@ -19,7 +19,6 @@ console.log(this.array)
 deleted(){
 
   let empty:any=[]
-  empty=JSON.stringify(empty)
 
   localStorage.setItem("fav",empty)
   window.location.reload()

@@ -1,4 +1,5 @@
 
+import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { OfferService } from 'src/app/Service/offer.service';
 
@@ -58,17 +59,18 @@ export class HomeComponent implements OnInit {
 
   //addfav function for adding favourites -------------
   addfav(items: any) {
-    let store: any = localStorage.getItem("fav") || []
+    let store: any = localStorage.getItem("fav") || [];
     if (store.length === 0) {
-      store.push(items)
-      console.log("added")
+      store.push(items);
+      console.log("added");
     }
-    else {
-      store = JSON.parse(store)
-      store.push(items)
+    else{
+      store=JSON.parse(store);
+      store.push(items);
+      console.log("Adding Done")
+    }
+  
 
-    }
-    console.log(store)
     store = JSON.stringify(store)
     localStorage.setItem("fav", store)
 
