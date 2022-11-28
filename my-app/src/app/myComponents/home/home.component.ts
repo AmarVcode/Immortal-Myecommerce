@@ -57,6 +57,8 @@ export class HomeComponent implements OnInit {
 
 
   //addfav function for adding favourites -------------
+  
+  bool:any=true;
   addfav(items: any) {
     let store: any = localStorage.getItem("fav") || [];
     if (store.length === 0) {
@@ -65,10 +67,24 @@ export class HomeComponent implements OnInit {
     }
     else{
       store=JSON.parse(store);
-      
+      store.map((element:any)=>{
+        if(element.brand===items.brand){
+          this.bool=false;
+        }
+      });
+
+console.log(this.bool);
+    
+    if(this.bool===true){
       store.push(items);
-      console.log("Adding Done");
     }
+    else{
+      console.log("already Exist Items");
+    }
+
+    }
+    
+
     store = JSON.stringify(store);
     localStorage.setItem("fav", store);
   }
