@@ -28,7 +28,7 @@ export class ProductdetailComponent implements OnInit {
     this.type=this.product.typeOfProduct;
     this.srcproduct=this.product.src;
     this.about=this.product.about;
-    this.subimg=this.product.
+    this.subimg=this.product.sub_img
     console.log(this.product);
     console.log(this.title);
     console.log(this.mainimg);
@@ -38,6 +38,7 @@ export class ProductdetailComponent implements OnInit {
     console.log(this.type);
     console.log(this.srcproduct);
     console.log(this.about);
+    console.log(this.subimg)
   }
 
   ngOnInit(): void {
