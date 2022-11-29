@@ -5,7 +5,7 @@
     
 </h1>
 
-<form class="form" [formGroup]="signIn" (ngSubmit)="signInUser()">
+<form class="form" [formGroup]="signIn">
     <input type="text" placeholder="Type our First Name" formControlName="user">
     <input type="text" placeholder="Type Your Middle Name" formControlName="userMiddle">
     <input type="text" placeholder="Type Your Last Name" formControlName="userLast">
@@ -20,5 +20,5 @@
         <option value="Bermuda">Bermuda</option>
         <option value="Pochinki">Pochinki</option>
     </select>
-    <button id="sign">Sign In</button>
+    <a routerLink="Home" id="sign" (click)="signInUser()">Sign In</a>
 </form>
