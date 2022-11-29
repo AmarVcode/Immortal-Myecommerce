@@ -88,6 +88,26 @@ console.log(this.bool);
     localStorage.setItem("fav", store);
   }
 
+  newproduct:any=[]
+
+search(){
+  let txt:any=document.getElementById("searchbar");
+  txt=txt.value;
+  txt=txt.toLowerCase();
+  this.newproduct=[]
+  
+  this.offer.map((elem:any)=>{
+    if(elem.main_title.toLowerCase().includes(txt)){
+      this.newproduct.push(elem)
+    }
+  })
+  console.log(this.newproduct)
+  console.log(txt)
+}
+  
+
+
+
   ngOnInit(): void {
   }
 

@@ -1,10 +1,18 @@
 <main>
-<h1 id="maintitle">
-    {{title}}
-</h1>
+
+<div class="search">
+    <input type="text" placeholder="Search Here....."  id="searchbar" (input)="search()">
+</div>
+
+<select>
+    <option>Sort</option>
+    <option><button>Price Low to High</button></option>
+    <option><button>Price High to Low</button></option>
+
+</select>
 
 <div class="products" >
-    <div *ngFor="let items of offer" class="items">
+    <div *ngFor="let items of newproduct" class="items">
     <div>
 <div class="imgdiv">
 <img src="{{items.main_img}}" alt="" (click)="fixed(items.main_img)">
@@ -19,6 +27,27 @@
     </div>
     </div>
     
+</div>
+<h1 id="maintitle">
+    {{title}}
+</h1>
+<div class="products" >
+    
+    
+    <div *ngFor="let items of offer" class="items">
+        <div>
+    <div class="imgdiv">
+    <img src="{{items.main_img}}" alt="" (click)="fixed(items.main_img)">
+    </div>
+        </div>
+        <div>
+    <h2>{{items.mini_title}}</h2>
+    <h4>Brand :- {{items.brand}}</h4>
+    <h3>Price :- {{items.price}} ₹</h3>
+    <button class="Fav" (click)="addfav(items)">Add To Favorite</button>
+    <button class="detail" (click)="detail(items)">Detail</button>
+        </div>
+        </div>
 </div>
 
 </main>
