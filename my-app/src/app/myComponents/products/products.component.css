@@ -155,15 +155,19 @@ select{
     padding: 1em;
     border-radius: 5px;
     max-width: 200px;
-    position: absolute;
+    position: relative;
     right: 0;
-    margin: 1em;
+    margin: 1rem;
 }
 
 
 
 @media (max-width:550px) {
     .items{
+        grid-template-columns: 100%;
+    }
+
+    .products{
         grid-template-columns: 100%;
     }
 }

@@ -106,6 +106,34 @@ search(){
 }
   
 
+low(){
+  this.offer.sort((a:any,b:any)=>{
+a=a.price;
+b=b.price;
+return a>b
+  })
+
+  this.newproduct.sort((a:any,b:any)=>{
+    a=a.price;
+    b=b.price;
+    return a>b
+      })
+}
+
+
+high(){
+  this.offer.sort((a:any,b:any)=>{
+a=a.price;
+b=b.price;
+return b>a
+  })
+
+  this.newproduct.sort((a:any,b:any)=>{
+    a=a.price;
+    b=b.price;
+    return b>a
+      })
+}
 
 
   ngOnInit(): void {
