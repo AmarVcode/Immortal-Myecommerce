@@ -9,6 +9,8 @@ import { ProductsComponent } from './myComponents/products/products.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Home', component: HomeComponent },
+  { path: 'Home/productdetail', component: ProductdetailComponent },
+
   { path: 'SignIn', component: FormComponent },
   { path: 'Products', component: ProductsComponent },
   { path: 'Favorites', component: FavoritesComponent },
