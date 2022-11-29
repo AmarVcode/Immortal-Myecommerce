@@ -30,7 +30,6 @@ export class HomeComponent implements OnInit {
   detail(items: any) {
     items = JSON.stringify(items)
     localStorage.setItem("detail", items)
-    location.href = "productdetail"
   }
 
 
