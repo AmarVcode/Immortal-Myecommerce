@@ -27,7 +27,7 @@ export class FormComponent implements OnInit {
       localStorage.setItem("userName",this.signIn.value.user)
     }
       alert("Thanks For Sign In Our Website, Confirm Your Sign in " + this.signIn.value.user +" "+ this.signIn.value.userMiddle +" "+ this.signIn.value.userLast)
-      location.reload()
+      window.location.reload()
   }
 
   
