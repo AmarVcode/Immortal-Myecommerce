@@ -14,8 +14,7 @@ const routes: Routes = [
   { path: 'Favorites', component: FavoritesComponent },
   { path: 'productdetail', component: ProductdetailComponent },
   { path: 'Products/productdetail', component: ProductdetailComponent },
-  { path: 'Favorites/productdetail', component: ProductdetailComponent },
-  { path: 'SignIn/Home', component: HomeComponent },
+  { path: 'Favorites/productdetail', component: ProductdetailComponent }
 
 
 

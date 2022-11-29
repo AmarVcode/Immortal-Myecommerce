@@ -21,7 +21,6 @@ deleted(){
   let empty:any=[]
 
   localStorage.setItem("fav",empty)
-  window.location.reload()
 }
 
 
