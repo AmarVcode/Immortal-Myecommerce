@@ -71,6 +71,7 @@ main {
 
 .products{
     padding: 1rem;
+    cursor: pointer;
 }
 
 .items{

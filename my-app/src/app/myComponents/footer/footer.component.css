@@ -8,6 +8,7 @@ footer{
     padding: 5rem;
     gap: 5rem;
     z-index: 1000;
+    cursor: pointer;
 }
 
 footer h3{
