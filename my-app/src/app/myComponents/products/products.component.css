@@ -173,4 +173,8 @@ select{
     .products{
         grid-template-columns: 100%;
     }
+    #fixed img{
+        position: relative;
+        max-width: 100% ;
+    }
 }
