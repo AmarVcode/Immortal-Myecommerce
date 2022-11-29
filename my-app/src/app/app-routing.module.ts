@@ -12,7 +12,10 @@ const routes: Routes = [
   { path: 'SignIn', component: FormComponent },
   { path: 'Products', component: ProductsComponent },
   { path: 'Favorites', component: FavoritesComponent },
-  { path: 'productdetail', component: ProductdetailComponent }
+  { path: 'productdetail', component: ProductdetailComponent },
+  { path: 'Products/productdetail', component: ProductdetailComponent },
+  { path: 'Favorites/productdetail', component: ProductdetailComponent }
+
 
 ];
 

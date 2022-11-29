@@ -50,7 +50,6 @@ deleted(){
    detail(items: any) {
     items = JSON.stringify(items)
     localStorage.setItem("detail", items)
-    location.pathname = "productdetail"
   }
 
 
