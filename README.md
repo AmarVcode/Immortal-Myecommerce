@@ -1,3 +1,3 @@
 # Immortal-Myecommerce
  
-deployed website link :-"https://immortal-gaming-amarvcode.netlify.app/"
+deployed website link :-"https://immortal-myecommerce.vercel.app/"
