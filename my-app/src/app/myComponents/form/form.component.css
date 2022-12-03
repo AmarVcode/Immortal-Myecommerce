@@ -23,6 +23,9 @@ h1{
 .form-wrapper{
     width: 100vw;
     padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form{
