@@ -12,7 +12,7 @@ main{
     background: linear-gradient(180deg, navy, black);
     background-clip: text;
     color: transparent;
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: 500ms;
 }
 
@@ -53,22 +53,23 @@ main{
 }
 
 .items h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 100%;
 }
 
 .items h4{
+    font-size: 1rem;
     width: 100%;
     text-align: left;
 }
 
 .items h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 100%;
 }
 
 .items button,a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 100%;
     border: none;
     margin: 10px;

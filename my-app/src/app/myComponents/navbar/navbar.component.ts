@@ -15,15 +15,17 @@ export class NavbarComponent implements OnInit {
   mymenu(){
 
     let menu=document.getElementById("menus")
-
+    let fix=document.getElementById("fixed")
     if(this.seedrop === false){
       this.seedrop=true
       menu?.classList.add("droptime")
+      fix?.classList.add("fixed")
     }
     else{
       this.seedrop=false
       menu?.classList.remove("droptime")
-
+      fix?.classList.remove("fixed")
+      
     }
 
 

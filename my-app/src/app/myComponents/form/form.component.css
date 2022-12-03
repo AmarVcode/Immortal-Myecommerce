@@ -19,9 +19,15 @@ h1{
     }
 }
 
+
+.form-wrapper{
+    width: 100vw;
+    padding: 1em;
+}
+
 .form{
     max-width: 400px;
-    margin: 2rem auto;
+    margin: 2rem;
     border: 3px solid #cc3766;
     padding: 2rem;
     border-radius: 5px;

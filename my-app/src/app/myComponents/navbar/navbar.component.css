@@ -26,6 +26,7 @@ nav>div{
     transition: 200ms ease-in-out !important;
     box-sizing: content-box;
     padding: 1rem;
+
 }
 
 #menu>svg{
@@ -40,7 +41,7 @@ nav>div{
 
 #signin{
     padding: 0.5em 2em;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 2px solid white;
     background-color: transparent;
     border-radius: 5px;
@@ -69,7 +70,7 @@ nav>div{
     background-size: 400%;
     background-position: left;
     padding: 1em 3em;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 500ms;
     
 }
@@ -79,7 +80,19 @@ nav>div{
     color: #191970;
 }
 
+.fixed{
+    display: block !important;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.397);
+    z-index: 100;
+}
 
+.fixedfalse{
+    display: none;
+}
 
 @media  (max-width:700px) {
 
@@ -99,7 +112,6 @@ nav>div{
 }
 #menu{
     display: flex;
-    z-index: 1000;
 }
 }
 
@@ -108,6 +120,7 @@ nav>div{
 .active{
     background-position: right !important;
     color: #191970 !important;
+    z-index: 2000;
 }
 .sactive{
     border:2px solid #1919707b !important;

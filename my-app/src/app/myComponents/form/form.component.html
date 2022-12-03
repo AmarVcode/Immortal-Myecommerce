@@ -4,12 +4,13 @@
 <h1 id="verfied">
     
 </h1>
+<div class="form-wrapper">
 
-<form class="form" [formGroup]="signIn">
-    <input type="text" placeholder="Type our First Name" formControlName="user">
-    <input type="text" placeholder="Type Your Middle Name" formControlName="userMiddle">
-    <input type="text" placeholder="Type Your Last Name" formControlName="userLast">
-    <select name="country" id="country">  
+    <form class="form" [formGroup]="signIn">
+        <input type="text" placeholder="Type our First Name" formControlName="user">
+        <input type="text" placeholder="Type Your Middle Name" formControlName="userMiddle">
+        <input type="text" placeholder="Type Your Last Name" formControlName="userLast">
+        <select name="country" id="country">  
         <option value="-">Select Your Country</option>
         <option value="India">India</option>
         <option value="America">America</option>
@@ -22,3 +23,4 @@
     </select>
     <a id="sign" (click)="signInUser()" routerLink="">Sign In</a>
 </form>
+</div>
