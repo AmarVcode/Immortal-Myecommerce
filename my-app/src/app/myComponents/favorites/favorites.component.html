@@ -9,7 +9,7 @@
         <div *ngFor="let items of array" class="items">
         <div>
 <div class="imgdiv">
-    <img src="{{items.main_img}}" alt="">
+    <img src="{{items.main_img}}" alt="" (click)="fixedimg(items.main_img)">
 </div>
         </div>
         <div>
@@ -26,3 +26,6 @@
 </a>
 </main>
 
+<div class="beforefixed" (click)="fixedimg(true)" id="fixeddiv">
+    <img src="" alt="" id="myimg">
+    </div>

@@ -15,7 +15,7 @@
     <div *ngFor="let items of newproduct" class="items">
     <div>
 <div class="imgdiv">
-<img src="{{items.main_img}}" alt="" (click)="fixed(items.main_img)">
+<img src="{{items.main_img}}" alt="" (click)="fixedimg(items.main_img)">
 </div>
     </div>
     <div>
@@ -37,7 +37,7 @@
     <div *ngFor="let items of offer" class="items">
         <div>
     <div class="imgdiv">
-    <img src="{{items.main_img}}" alt="" (click)="fixed(items.main_img)">
+    <img src="{{items.main_img}}" alt="" (click)="fixedimg(items.main_img)">
     </div>
         </div>
         <div>
@@ -52,6 +52,6 @@
 
 </main>
 
-<div id="fixed" (click)="removefixed()">
-<img src="" id="zoomed">
-</div>
+<div class="beforefixed" (click)="fixedimg(true)" id="fixeddiv">
+    <img src="" alt="" id="myimg">
+    </div>

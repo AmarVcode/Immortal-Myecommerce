@@ -112,26 +112,6 @@ main{
     cursor: pointer;
 }
 
-#fixed{
-    top: 0;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.507);
-    z-index: 1000;
-    cursor: pointer;
-    display: none;
-}
-
-#fixed img{
-    max-width: 500px;
-}
-
-.fixed2{
-    display: flex !important;
-     align-items: center;
-    justify-content: center;
-}
 
 .search{
     width: 100%;

@@ -34,25 +34,6 @@ public title="All Products"
 
 
 
-  //fixed Function Image Zoom
-  fixed(src: any) {
-    console.log("working")
-    console.log(src)
-    let div = document.getElementById("fixed")
-    div?.setAttribute("class", "fixed2")
-    let img = document.getElementById("zoomed")
-    img?.setAttribute("src", src)
-  }
-
-
-  //removing function for nmoveing class from dom reverse of fixed
-  removefixed() {
-    let div = document.getElementById("fixed")
-    div?.classList.remove("fixed2")
-  }
-
-
-
 
   //addfav function for adding favourites -------------
   
@@ -136,6 +117,21 @@ return b>a
 
 scroll(){
   window.scroll(0,0)
+}
+
+public boolimg:boolean=false
+
+fixedimg(src:any){
+  if(this.boolimg===false){
+    this.boolimg=true
+    document.getElementById("fixeddiv")?.classList.add("fixed")
+    document.getElementById("myimg")?.setAttribute("src",src)
+  }
+  else{
+    this.boolimg=false
+    document.getElementById("fixeddiv")?.classList.remove("fixed")
+
+  }
 }
 
   ngOnInit(): void {

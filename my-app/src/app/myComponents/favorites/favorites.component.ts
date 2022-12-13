@@ -43,6 +43,21 @@ deleted(){
     window.scroll(0,0)
   }
 
+
+  public boolimg:boolean=false
+
+fixedimg(src:any){
+  if(this.boolimg===false){
+    this.boolimg=true
+    document.getElementById("fixeddiv")?.classList.add("fixed")
+    document.getElementById("myimg")?.setAttribute("src",src)
+  }
+  else{
+    this.boolimg=false
+    document.getElementById("fixeddiv")?.classList.remove("fixed")
+
+  }
+}
   ngOnInit(): void {
   }
 
