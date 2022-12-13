@@ -134,6 +134,9 @@ return b>a
       })
 }
 
+scroll(){
+  window.scroll(0,0)
+}
 
   ngOnInit(): void {
   }

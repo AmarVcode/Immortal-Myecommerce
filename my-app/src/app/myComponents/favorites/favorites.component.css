@@ -135,18 +135,16 @@ main {
 }
 
 #delete{
+    display: block;
     border: 2px solid red;
     background-color: red;
     color: white;
     font-size: 1rem;
     padding: 1em 3em;
     font-weight: 600;
+    max-width: 50%;
     border-radius: 10px;
-    margin: auto;
-    position: sticky;
-    right: 0;
-    top: 0px;
-    margin: 2rem;
+    margin: 1rem !important;
     transition: 200ms;
     cursor: pointer;
 }

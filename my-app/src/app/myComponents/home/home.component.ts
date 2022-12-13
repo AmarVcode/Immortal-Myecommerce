@@ -70,6 +70,12 @@ console.log(this.bool);
     store = JSON.stringify(store);
     localStorage.setItem("fav", store);
   }
+
+
+
+  scroll(){
+    window.scroll(0,0)
+  }
   ngOnInit(): void {
 
   }
