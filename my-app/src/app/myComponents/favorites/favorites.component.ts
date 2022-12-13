@@ -21,27 +21,12 @@ deleted(){
   let empty:any=[]
 
   localStorage.setItem("fav",empty)
+  location.reload()
 }
 
 
 
 
-  //fixed Function Image Zoom
-  fixed(src: any) {
-    console.log("working")
-    console.log(src)
-    let div = document.getElementById("fixed")
-    div?.setAttribute("class", "fixed2")
-    let img = document.getElementById("zoomed")
-    img?.setAttribute("src", src)
-  }
-
-
-  //removing function for nmoveing class from dom reverse of fixed
-  removefixed() {
-    let div = document.getElementById("fixed")
-    div?.classList.remove("fixed2")
-  }
 
 
 
@@ -52,6 +37,11 @@ deleted(){
   }
 
 
+
+  //scrool up functionlity
+  scroll(){
+    window.scroll(0,0)
+  }
 
   ngOnInit(): void {
   }

@@ -50,25 +50,6 @@ export class ProductdetailComponent implements OnInit {
 
 
 
-   //fixed Function Image Zoom
-   fixed() {
-    let src:any=document.getElementById("mainI");
-    src=src.src;
-    console.log("working")
-    console.log(src)
-    let div = document.getElementById("fixed")
-    div?.setAttribute("class", "fixed2")
-    let img = document.getElementById("zoomed")
-    img?.setAttribute("src", src)
-  }
-
-
-  //removing function for nmoveing class from dom reverse of fixed
-  removefixed() {
-    let div = document.getElementById("fixed")
-    div?.classList.remove("fixed2")
-  }
-
   ngOnInit(): void {
   }
 

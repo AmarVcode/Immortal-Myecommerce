@@ -9,7 +9,7 @@
         <div *ngFor="let items of array" class="items">
         <div>
 <div class="imgdiv">
-    <img src="{{items.main_img}}" alt="" (click)="fixed(items.main_img)">
+    <img src="{{items.main_img}}" alt="">
 </div>
         </div>
         <div>
@@ -21,11 +21,8 @@
         </div>
         
     </div>
-<a (click)="deleted()" id="delete" routerLink="">
+<a (click)="deleted()" (click)="scroll()" id="delete" >
     Delete Favorites
 </a>
 </main>
 
-<div id="fixed" (click)="removefixed()">
-    <img src="" id="zoomed">
-</div>

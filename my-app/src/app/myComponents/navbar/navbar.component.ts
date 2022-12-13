@@ -31,6 +31,10 @@ export class NavbarComponent implements OnInit {
 
   console.log(this.seedrop,menu)
 }
+
+scroll(){
+  window.scroll(0,0)
+}
   constructor() { 
 
 

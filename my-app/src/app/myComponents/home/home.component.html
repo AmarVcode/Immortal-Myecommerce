@@ -17,7 +17,7 @@
         <div *ngFor="let items of offer" class="items">
         <div>
 <div class="imgdiv">
-    <img src="{{items.main_img}}" alt="" (click)="fixed(items.main_img)">
+    <img src="{{items.main_img}}" alt="">
 </div>
         </div>
         <div>
@@ -32,7 +32,3 @@
     </div>
 
 </main>
-
-<div id="fixed" (click)="removefixed()">
-    <img src="" id="zoomed">
-</div>

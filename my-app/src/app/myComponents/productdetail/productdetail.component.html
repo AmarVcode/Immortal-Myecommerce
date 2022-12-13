@@ -1,7 +1,7 @@
 <main>
     <div class="grid">
        <div class="imgdiv">
-        <img src="{{mainimg}}" alt="" id="mainI" (click)="fixed()">
+        <img src="{{mainimg}}" alt="" id="mainI">
     </div>
     <div class="fleximg" >
         <div class="miniimg" *ngFor="let items of subimg">
@@ -39,8 +39,3 @@
      
     </div>
 </main>
-
-
-<div id="fixed" (click)="removefixed()">
-    <img src="" id="zoomed">
-</div>
